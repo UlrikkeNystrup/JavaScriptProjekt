@@ -6,19 +6,18 @@
 </head>
 
 <script>
+    let list = new Array();
     function doCalc(){
-        const a = parseInt(document.getElementById("input1").value);
-        const b = parseInt(document.getElementById("input2").value);
-        document.getElementById("result").innerText = a+b;
+        list.push(document.getElementById("input1").value) ;
+        document.getElementById("result").innerText = list;
     }
 </script>
 
 <body>
 <input type="number" id="input1">
-<input type="number" id="input2">
 <div>Resultat</div>
 <div id="result"></div>
-<button onclick="doCalc()">Beregn</button>
+<button onclick="doCalc()"> Beregn </button>
 </body>
 </html>
 
